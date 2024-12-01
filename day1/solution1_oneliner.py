@@ -1,0 +1,1 @@
+(lambda f: (lambda data: print((lambda read_file: sum(abs(x-y) for x, y in zip(sorted(read_file[::2]), sorted(read_file[1::2]))))([int(x) for x in data.split()])))([f.read(), f.close()][0]))(open("input.txt"))

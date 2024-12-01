@@ -1,0 +1,1 @@
+(lambda f: (lambda data: (lambda read_file: print((lambda count_dict_right: sum(count_dict_right.get(l,0) * l for l in read_file[::2]))((lambda array: {r: sum(1 for x in array if x == r) for r in array})(read_file[1::2]))))([int(x) for x in data.split()]))([f.read(), f.close()][0]))(open("input.txt"))
