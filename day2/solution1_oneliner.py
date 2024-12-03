@@ -1,0 +1,1 @@
+(lambda f: print(sum((lambda string: (lambda levels: (lambda diff: (lambda arr: sum(x == 0 or abs(x) > 3 for x in arr) == 0)(diff) and (lambda arr: sum((x > 0) != (arr[0] > 0) for x in arr) == 0)(diff))([x - y for x, y in zip(levels[:len(levels)-1], levels[1:])]))([int(x) for x in string.split()]))(line) for line in f)))(open("input.txt"))
